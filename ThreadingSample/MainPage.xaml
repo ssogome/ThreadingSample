@@ -18,6 +18,12 @@
             <Setter Property="VerticalAlignment" Value="Top" />
             <Setter Property="Orientation" Value="Vertical" />
         </Style>
+
+        <Style TargetType="ProgressBar">
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Foreground" Value="Orange"/>
+        </Style>
     </Page.Resources>
 
     <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -28,5 +34,7 @@
         <Button x:Name="ThreadPoolButton" Click="ThreadPoolButton_Click" Content="Asynchronous operation (ThreadPool)" />
         <Button x:Name="TimerButton" Click="TimerButton_Click" Content="Start Timer" />
         <Button x:Name="ThreadPoolTimerButton" Click="ThreadPoolTimerButton_Click" Content="Start ThreadPoolTimer" />
+
+        <ProgressBar x:Name="ProgressBar"/>
     </StackPanel>
 </Page>

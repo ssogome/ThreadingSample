@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="ThreadingSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ThreadingSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+
+        <Style TargetType="StackPanel">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Orientation" Value="Vertical" />
+        </Style>
+    </Page.Resources>
+
+    <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    </Grid>-->
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="TaskButton" Click="TaskButton_Click" Content="Asynchronous operation (Task)" />
+        <Button x:Name="ThreadPoolButton" Click="ThreadPoolButton_Click" Content="Asynchronous operation (ThreadPool)" />
+        <Button x:Name="TimerButton" Click="TimerButton_Click" Content="Start Timer" />
+        <Button x:Name="ThreadPoolTimerButton" Click="ThreadPoolTimerButton_Click" Content="Start ThreadPoolTimer" />
+    </StackPanel>
+</Page>
